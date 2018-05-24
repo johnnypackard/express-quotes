@@ -23,7 +23,7 @@ app.get( '/quotes', ( req, res )=>{
 
 // post output
 app.post( '/quotes', (req, res)=>{
-    console.log( 'in POST')
+    console.log( 'in POST hit for /quotes route', req.body );
     quotes.push( req.body.quote.name );
     res.sendStatus( 200 );
 }); // end POST

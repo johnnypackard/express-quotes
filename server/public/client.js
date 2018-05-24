@@ -3,7 +3,6 @@ $( document ).ready( readyNow );
 function readyNow(){
     getQuotes();
     $( '#addQuoteButton').on( 'click', addQuote );
-    $( '#addNameButton').on( 'click', addName );
 }
 
 function addQuote(){
@@ -28,7 +27,7 @@ function displayQuotes( quote ){
     let el = $( '#quoteOut');
     el.empty();
     for (quote of quotes){
-        el.append( '<li> + quote </li>');
+        el.append( '<li> + quote + </li>' );
     } // end quote for loop
 }
 
